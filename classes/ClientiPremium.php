@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__.'/Clienti.php';
+// require __DIR__.'/Clienti.php';
 
-class ClientePremium extends Clienti{
+class ClientePremium extends Cliente{
 
     public $dataIscrizione;
     public $_codicePremium;
