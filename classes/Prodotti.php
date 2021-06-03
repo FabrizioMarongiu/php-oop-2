@@ -1,15 +1,15 @@
 <?php
     class Prodotti{
         // PROPRIETA'
-        public $nome;
+        public $brand;
         public $descrizione;
         protected $prezzo;
         protected $codice;
         protected $sconto;
 
         //COSTRUTTORE
-        function __construct($_nome, $_descrizione,$_codice, $_prezzo, $_sconto){
-            $this->nome = $_nome;
+        function __construct($_brand, $_descrizione,$_codice, $_prezzo, $_sconto){
+            $this->brand = $_brand;
             $this->descrizione = $_descrizione;
             $this->codice = $_codice;
             $this->prezzo = $_prezzo;

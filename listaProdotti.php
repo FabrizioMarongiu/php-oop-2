@@ -27,7 +27,7 @@
         <!-- Dichiarazione di un oggetto -->
         <?php foreach ($food as $food){?>
         
-            <h3>Nome articolo: <?php echo $food->nome ?></h3>
+            <h3>Brand: <?php echo $food->brand ?></h3>
 
             <h4>Prezzo: <?php echo $food -> getPrice(); ?> €</h4>
             
@@ -39,7 +39,7 @@
         <!-- Dichiarazione di un oggetto -->
         <?php foreach ($nonFood as $nonfood){?>
         
-            <h3>Nome articolo: <?php echo $nonfood->nome ?></h3>
+            <h3>Brand: <?php echo $nonfood->brand ?></h3>
 
             <h4>Prezzo: <?php echo $nonfood -> getPrice(); ?> €</h4>
             

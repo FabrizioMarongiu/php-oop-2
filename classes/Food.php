@@ -6,8 +6,8 @@
         public $categoria;
        
         //COSTRUTTORE
-        function __construct($_nome, $_descrizione,$_codice, $_prezzo, $_sconto, $_categoria){
-            parent::__construct($_nome, $_descrizione,$_codice, $_prezzo, $_sconto);
+        function __construct($_brand, $_descrizione,$_codice, $_prezzo, $_sconto, $_categoria){
+            parent::__construct($_brand, $_descrizione,$_codice, $_prezzo, $_sconto);
             
             $this->categoria = $_categoria;
         }

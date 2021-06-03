@@ -6,8 +6,8 @@
         public $reparto;
 
         //COSTRUTTORE
-        function __construct($_nome, $_descrizione, $_codice, $_prezzo, $_sconto, $_reparto){
-            parent::__construct($_nome, $_descrizione,$_codice, $_prezzo, $_sconto);
+        function __construct($_brand, $_descrizione, $_codice, $_prezzo, $_sconto, $_reparto){
+            parent::__construct($_brand, $_descrizione,$_codice, $_prezzo, $_sconto);
             
             $this->reparto = $_reparto;
         }

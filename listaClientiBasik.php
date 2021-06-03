@@ -17,11 +17,13 @@
 </head>
 <body>
     <main>
-        <h1>Lista clienti Premium</h1>
+        <h1>Lista clienti Basik</h1>
         <?php foreach($clienti as $clientB) {?>
-            <h2>Nome: <?php echo $clientB->nome ?></h2>
-            <h2>Nome: <?php echo $clientB->cognome ?></h2>
-            <h2>Nome: <?php echo $clientB->eta ?></h2>
+            <h2>Nome: <?php echo $clientB->getFullName()?></h2>
+            
+            <h2>Età: <?php echo $clientB->getAge() ?></h2>
+            
+            <h2>Scontistica applicabile: <?php echo $clientB->getDiscount() ?> %</h2>
 
         <?php } ?>
     </main>

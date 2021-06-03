@@ -1,11 +1,11 @@
 <?php
 
 class Cliente{
-    public $nome;
-    public $cognome;
-    public $eta;
+    private $nome;
+    private $cognome;
+    private $eta;
     public $documenti;
-    public $sconto;
+    protected $sconto;
 
     function __construct($_nome, $_cognome, $_eta, $_documenti){
         $this->nome = $_nome;
@@ -17,18 +17,30 @@ class Cliente{
     // METODI
     public function getDiscount(){
         $this->sconto = $this->eta > 50 ? 10 : 0;
+        return $this -> sconto;
     }
+
+    public function getFullName(){
+        return $this ->nome . ' ' . $this -> cognome;
+    }
+    public function getAge(){
+        return $this ->eta;
+    }
+
+
+
+
 }
 
 
 $cliente1 = new Cliente('Lola', 'Plex', 80, 'ID');
-$cliente1 -> getDiscount();
+
 
 $cliente2 = new Cliente('Ravanello', 'Pallido', 68, 'ID');
-$cliente2 -> getDiscount();
 
-$cliente3 = new Cliente('Edna', 'Caprapall', 80, 'Patente');
-$cliente3 -> getDiscount();
+
+$cliente3 = new Cliente('Edna', 'Caprapall', 47, 'Patente');
+
 
 $clienti [] = $cliente1;
 $clienti [] = $cliente2;
