@@ -4,13 +4,11 @@
 
 class ClientePremium extends Cliente{
 
-    public $dataIscrizione;
     public $_codicePremium;
 
-    function __construct($_nome, $_cognome, $_eta, $_documenti, $_dataIscrizione, $_codicePremium){
+    function __construct($_nome, $_cognome, $_eta, $_documenti, $_codicePremium){
         parent::__construct($_nome, $_cognome, $_eta, $_documenti);
-        $this->_dataIscrizione = $_dataIscrizione;
-        $_codicePremium = $_codicePremium;
+        $this->codicePremium = $_codicePremium;
     }
 
     // METODI
@@ -23,13 +21,13 @@ class ClientePremium extends Cliente{
     }
 }
 
-$clientePremium1 = new ClientePremium('Fabrizio', 'Marongiu', '34', 'Patente', 'Gennaio', 101);
+$clientePremium1 = new ClientePremium('Fabrizio', 'Marongiu', '34', 'Patente', 101);
 
 
-$clientePremium2 = new ClientePremium('Paolo', 'Lanterna', '54', 'ID', 'Aprile', 102);
+$clientePremium2 = new ClientePremium('Paolo', 'Lanterna', '54', 'ID', 102);
 
 
-$clientePremium3 = new ClientePremium('Lucrezia', 'Sessa', '25', 'ID', 'Agosto', 102);
+$clientePremium3 = new ClientePremium('Lucrezia', 'Sessa', '25', 'ID', 103);
 
 
 $clientiPremium [] = $clientePremium1;
